@@ -12,6 +12,7 @@ function App() {
     axios
       .post('/api/login', {username, password})
       .then((res) => {
+        console.log(res.data)
         setToken(res)
       })
       .catch((err) => {
